@@ -10,3 +10,6 @@ var age1  = 30;
 var age2 = 32 ;
 
 console.log(age2);
+
+
+//  
