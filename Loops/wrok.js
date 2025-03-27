@@ -9,8 +9,6 @@ function sumevennumbers(n) {
 console.log(sumevennumbers(10));
 
 
-
-
 // prpgram 2
 
 
