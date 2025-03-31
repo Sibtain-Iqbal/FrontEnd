@@ -30,11 +30,6 @@ function countEvenOdd(nums) {
 }
 
 console.log(countEvenOdd([1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11]));
-
-
-
-
-
 // question 3Write a program that takes an array of numbers and return a new array with elements
 // squared.
 
