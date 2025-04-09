@@ -13,11 +13,6 @@
 const para  = document.getElementById('para')
 const inputs = document.getElementById('input')
 
-inputs.addEventListener('keydown',keyboardevent)
-
-function keyboardevent(e){
+inputs.addEventListener("keypress",(e)=>{
     para.textContent = e.target.value
-    // console.log(e.target.value)
-    // document.writeln("sasakjsbk")
-
-}
+})
