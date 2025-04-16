@@ -1,0 +1,29 @@
+.container{
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    padding: auto;
+    color: white;
+    background-color: brown;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+.btn{
+    margin: auto;
+    padding: 10px 30px;
+    background-color: chocolate;
+    color: white;
+    border-inline: none;
+    border-radius: 10px;
+}

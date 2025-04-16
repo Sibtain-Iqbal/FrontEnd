@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container mx-auto ">
+
+        <div class="btns">
+            <div class="innerbtn">
+                <!-- <button class=" active px-16 py-4 text-lg text-white bg-gradient-to-r from-cyan-400 to-green-300 rounded-full shadow-lg hover:scale-110 hover:shadow-xl active:scale-95 transition-all duration-300 mb-2 " id="subject">Subjets</button> -->
+
+                <button class="px-10 py-4 border border-black/40 rounded-[20px] cursor-pointer mb-5 active btn"
+                    id="0">subject</button>
+                <button class="px-10 py-4 border border-black/40 rounded-[20px]  mb-5  cursor-pointer btn"
+                    id="1">assigments</button>
+                <button class="px-10 py-4 border border-black/40 rounded-[20px]  mb-5  cursor-pointer btn"
+                    id="2">quizes</button>
+                <button class="px-10 py-4 border border-black/40 rounded-[20px]  mb-5  cursor-pointer btn"
+                    id="3">students</button>
+            </div>
+
+
+        </div>
+
+
+        <div class="right-section">
+            <div class="sec">
+
+                <div class="subjetcs subject-box main section "  id="section-0">
+                    <h2>Computer Science</h2>
+                    <p>
+                        Computer Science is the study of computers, programming languages, software development,
+                        networking, artificial intelligence, and data structures.
+                    </p>
+
+                </div>
+                <div class="assignments section subject-box main" id="section-1" style="display: none;">
+                    <h2>Assignments</h2>
+                    <p>
+                        Assignments help students to practice and apply what they learn. They improve understanding and
+                        problem-solving skills.
+                    </p>
+                </div>
+
+                <div class="quizzes subject-box main section" id="section-2" 
+                style="display: none;">
+                    <h2>Quizzes</h2>
+                    <p>
+                        Quizzes are short tests to check your knowledge and preparation. They help in revision and
+                        learning.
+                    </p>
+                </div>
+
+
+                <div class="students subject-box main section" id="section-3" 
+                style="display: none;">
+                    <h2>Students</h2>
+                    <p>
+                        Students are the learners and future of technology. They participate in lectures, projects, and
+                        educational activities.
+                    </p>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <script src="./bar.js"></script>
+</body>
+
+</html>

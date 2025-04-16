@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="w-[100%] h-[100vh] flex items-center justify-center">
+        <div class="w-[400px] mx-auto bg-[#1C1C1C] py-10 px-6 rounded-xl relative">
+            <h1 class="text-center text-2xl text-white font-medium mb-1">Our Top Reviews</h1>
+
+            <p class="text-center text-white text-base mb-6" id="destination">Ancient Pyramids</p>
+            <p class="text-white text-center text-[10px] mb-8" id="review">The Pacific Grove Chamber of Commerce would
+                like to thank eLab Communications...</p>
+            <p class="text-white text-center text-[10px]" id="user">Measum Abbas</p>
+
+
+            <button id="prevBtn" class="absolute left-2 top-[50%] -translate-y-1/2 text-white text-xl">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <button id="nextBtn" class="absolute right-2 top-[50%] -translate-y-1/2 text-white text-xl">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+
+            <div class="flex justify-center mt-6 space-x-2" id="dots">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./slider.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@ let countitngdown = true ;
 setInterval(logic,1000)
 
 
-function logic(params) {
+function logic() {
     console.log(count);
 
     if (countitngdown){

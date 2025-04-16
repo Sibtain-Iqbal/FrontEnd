@@ -1,0 +1,114 @@
+/* 
+.btn{
+    color: white;
+    background: blue;
+    border-radius: 5px;
+} */
+
+
+  
+
+
+
+.main{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+ margin-bottom: 10px;
+}
+
+/* .cool-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 201, 255, 0.3);
+    margin-bottom: 5px;
+  }
+  
+  .cool-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 201, 255, 0.5);
+  }
+  
+  .cool-btn:active {
+    transform: scale(0.98);
+  } */
+  
+.innerbtn{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+
+.container{
+    display: flex;
+    margin-top: 50px;
+    gap: 150PX;
+    
+
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.subject-box {
+    /* display: block; */
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 50px;
+  }
+  
+  .subject-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+  }
+  
+  .subject-box h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #00ffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .subject-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+
+
+  
+.active{
+    /* padding: 12px 30px; */
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 201, 255, 0.3);
+    margin-bottom: 5px;
+}
+   
