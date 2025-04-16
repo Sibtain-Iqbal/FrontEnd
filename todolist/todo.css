@@ -28,3 +28,10 @@
     border-radius: 10px;
 }
 
+
+.input{
+    padding: 10px 20px;
+    width: 200px;
+    outline: none;
+
+}
