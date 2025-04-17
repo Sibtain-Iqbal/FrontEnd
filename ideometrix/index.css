@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    align-items: center;
+    /* max-width: 1140px; */
+}
+
+
+header{
+    /* max-width: 1440px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 15px 100px;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .15);
+    
+
+}
+
+.right-nav ul{
+    display: flex;
+    flex: row   ;
+    gap: 40px;
+    
+
+}
+
+
+.home span    {
+    color: #f7cc7d;
+    /* font-size: 20px; */
+}
+
+
+
+.contact-btn {
+    background: #26344e;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    padding: 12px 15px;
+}
+.right-nav ul li a {
+    color: #808080;
+    font-size: 20px;
+    
+}
+
+/* section1 */
+
+
+.section-1{
+    /* max-width: 1440px; */
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* gap: 140px; */
+    gap: 100px;
+    padding: 50px 10px;
+    border: 2px solid red;
+
+}
+.left-section{
+    width: 500px;
+    height: 500px;
+
+
+
+}
+
+#spec-color  span{
+    color: #f7cc7d; 
+}
+
+
+#spec-color{
+    color: #26344e;
+    font-family: League Gothic;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .01em;
+    line-height: 67px;
+    /* width: 500px; */
+    border: 2px solid red;
+}
+    
+.para{
+    color: #2c3643;
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.right-section{ 
+    /* width: 500px;
+    height: 500px; */
+    border: 2px solid red;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    /* left:85px; */
+}
+
+.right-section img{
+   
+}
+
+
+.para-2{
+    color: #777d8a;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 25px;
+    margin-bottom: 28px;
+    margin-top: 15px;
+}
+.contact-button{
+    background: #26344e;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    padding: 12px 25px;
+}
+.lear-btn{
+    align-items: center;
+    background: #fff;
+    border: 1px solid #26344e;
+    border-radius: 4px;
+    color: #26344e;
+    cursor: pointer;
+    /* display: flex; */
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    height: 44px;
+    justify-content: center;
+    line-height: 24px;
+    width: 121px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+   
+.section-1{
+    /* max-width: 1440px; */
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* gap: 140px; */
+    gap: 30px;
+    padding: 40px 5px;
+    border: 2px solid red;
+
+}
+.right-section{ 
+    /* width: 500px;
+    height: 500px; */
+    border: 2px solid red;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    /* left:85px; */
+}
+
+    
+
+
+
+
+}
+
+
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .right-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 25px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 190px;
+        padding: 15px;
+        /* top: 5px; */
+        border-radius: 5px;
+    }
+
+
+
+
+    .hamburger {
+        display: block;
+
+
+    }
+
+
+}
