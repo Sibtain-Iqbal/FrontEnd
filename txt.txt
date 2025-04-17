@@ -1,0 +1,17 @@
+Create a simple random quote generator where different quotes appear each time you click the button.
+
+
+Create a To-Do List app where the user can input a task and click Add Task to add it to the list.
+
+
+Create a small web-based application where a user can input a word, and when clicking a button, the app should display whether the word is a palindrome or not
+
+
+Create an application where a user can type into a text box. Below the text box, display the count of characters the user enters in real-time.
+
+The paragraph and the name should be stored as objects inside an array. Using setInterval, update the displayed paragraph and name every 3 seconds to show the next entry from the array.
+
+                         
+
+
+Create a responsive Navbar using HTML, CSS, and JS
