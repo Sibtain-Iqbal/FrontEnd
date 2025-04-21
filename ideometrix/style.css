@@ -18,8 +18,10 @@
     padding: 15px 100px;
     background: #fff;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-    position: relative;
-
+    /* position: relative; */
+    /* position: fixed;
+    top: 0; */
+    
 }
   
 .logo-nav img {
@@ -122,7 +124,12 @@
     padding: 12px 25px;
     cursor: pointer;
   }
-  
+  /* .contact-button:hover{
+    background: white;
+    color: black;
+    border: 1px solid bla;
+  }
+   */
   .lear-btn {
     border: 1px solid #26344e;
     background: #fff;
@@ -380,7 +387,7 @@
 
 .section-5{
   width: 100%;
-  /* border: 2px solid green; */
+  padding-bottom: 50px;
 }
 .section-5-heading{
   text-align: center;
@@ -446,6 +453,16 @@ transition-duration: .3s;
   gap: 60px;
   justify-content: center;
   margin-top: 50px;
+
+
+}
+.iner-sec5-cards{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow .5s ease;
+}
+.iner-sec5-cards:hover{
+ 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -456,7 +473,8 @@ transition-duration: .3s;
   border-radius: 8px;
   max-width: 354px;
   padding: 10px;
-  transition: background .5s ease, box-shadow .5s ease;
+ 
+
 }
 
 .iner-sec5-cards h1{
@@ -470,13 +488,54 @@ transition-duration: .3s;
 }
 
 
+/*  SECTION 6 STYLING*/
+
+.scraper-section{
+width: 100%;
+/* margin: auto; */
+  background-color: #fafafa;
+     text-align: center;
+   
+   display: flex;
+   justify-content: center;
+   
+  
+
+
+}
+.testmonial-head{
+  align-items: center;
+  padding-top: 50px;
+}
+
+.testmonial-head h1{
+  color: #2c3643;
+  font-family: Cabin;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  line-height: 50px;
+}
+.testmonial-para{
+  color: #0f2137;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 70px;
+  max-width: 751px;
+  text-align: center;
+}
 
 
 
 
 
 
-  /* Responsive Styles */
+
+
   @media screen and (max-width: 1020px) {
     .right-nav ul {
         display: none;
@@ -502,6 +561,9 @@ transition-duration: .3s;
         cursor: pointer;
         z-index: 1000;
     }
+    .scraper-img{
+      width: auto;
+    }
 }
 
 
@@ -525,6 +587,11 @@ transition-duration: .3s;
     .contact-button,
     .lear-btn {
       width: 100%;
+  }
+    .scraper-img img{
+      width: 10px;
     }
   }
   
+
+

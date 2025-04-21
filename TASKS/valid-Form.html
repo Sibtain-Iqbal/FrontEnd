@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <style>
+
+
+.container{
+    width: 100%;
+    background-color: #fafafa;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    .main-img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      border: 2px solid #555;
+      margin-bottom: 10px;
+    }
+    .thumbnails img {
+      width: 70px;
+      height: 50px;
+      margin-right: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .thumbnails img:hover {
+      border-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2> Image Gallery</h2>
+        <img id="mainImage" class="main-img" src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=" alt="Main Image">
+
+
+      
+        <div class="thumbnails">
+          <img src="https://cdn.mos.cms.futurecdn.net/VFLt5vHV7aCoLrLGjP9Qwm-1200-80.jpg" onclick="changeImage(this.src)">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6grLVXJ8urLdHBRlAgUfovtkNTQ75URfRQg&s" onclick="changeImage(this.src)">
+          <img src="https://cdn.prod.website-files.com/66bd891868915070097476ed/66f952a229dfadef4a372861_ai-generated-8540920_1280.jpg" onclick="changeImage(this.src)">
+        </div>
+
+    </div>
+    
+  
+
+  <script>
+
+    function changeImage(imglocation) {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = imglocation;
+    }
+
+
+
+
+  </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Converter</title>
+  <style>
+    body {
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .converter-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 300px;
+      width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <div class="converter-box">
+    <h2>Celsius to Fahrenheit</h2>
+    <input type="number" id="celsiusInput" placeholder="Enter °C" />
+    <button onclick="convertToF()">Convert</button>
+    <div class="result" id="resultText"></div>
+  </div>
+
+  <script>
+    function convertToF() {
+       celcius_value =  document.getElementById('celsiusInput')
+      const celsius = parseFloat(celcius_value.value);
+      const resultDiv = document.getElementById('resultText');
+
+      if (celsius === NaN) {
+        resultDiv.textContent = "❌ Please enter a valid number.";
+      } else {
+
+        const fahrenheit = (celsius * 9/5) + 32;
+        
+        resultDiv.textContent = `${celsius}°C = ${fahrenheit}°F`;
+      }
+    }
+  </script>
+
+</body>
+</html>
