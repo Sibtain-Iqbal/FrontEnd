@@ -37,6 +37,7 @@ const fetchgithubuser = ()=>{
            const image = document.createElement("img")
          const heading =  document.createElement("h1")
          image.src = users.avatar_url;
+         
             heading.textContent = `USER NAME : ${users.login} `
             div.appendChild(image)
             div.appendChild(heading)
