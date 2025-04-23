@@ -1,56 +1,26 @@
-// console.log("besfore settime out");
 
-
-
-// promise acceppt
-
-// const asycronsesHandle = ()=>{
-//     return new Promise((resolve,reject)=>{
-//         setTimeout(()=>{
-//             resolve("succelfully resolve")
-            
-//         },[5000])
-//     })
-// }
-// console.log("besfore settime out");
-// asycronsesHandle().then((data)=>{
-//     console.log(data);
-    
-// })
-
-
-
-const username = document.getElementById("username")
 const img = document.getElementById("img")
-const section = document.getElementById("section")
+const username = document.getElementById("username")
 
 
-const fetchgithubuser = ()=>{
-    fetch("https://api.github.com/user/Sibain-Iqbal")
+const githubprofile =()=>{
+
+    fetch("https://api.github.com/users")
+    .then(data => data.json())
+
     .then((data)=>{
-        return data.json();
+
+        const newdata = data[6]
+        img.src = newdata.avatar_url
+        username.textContent = newdata.login        
     })
-    .then((parsedData)=>{
-        console.log("fetch");
-        parsedData.forEach((users)=>{
-           const div =  document.createElement("div")
-           const image = document.createElement("img")
-         const heading =  document.createElement("h1")
-         image.src = users.avatar_url;
-         
-            heading.textContent = `USER NAME : ${users.login} `
-            div.appendChild(image)
-            div.appendChild(heading)
-            section.appendChild(div)
-            
 
 
-        });
-        
-    })
     .catch((error)=>{
-        console.log("ERROR FOUND",error);
+        console.log("error handle",error);
         
     })
 }
-fetchgithubuser()
+
+
+githubprofile()

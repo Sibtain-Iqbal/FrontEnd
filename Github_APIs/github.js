@@ -43,6 +43,8 @@ const Github_Api = () => {
 
       .then((user) => {
         user.forEach((userdata) => {
+          console.log(userdata);
+          
           const lis = document.createElement("li");
           lis.classList.add("repo-item");
           lis.innerHTML = `<a href="${userdata.html_url}" target="_blank">${userdata.name}</a>`;
